@@ -26,7 +26,7 @@ export async function POST(request: Request) {
   try {
     // Aptos configuration remains the same
     const aptosConfig = new AptosConfig({
-      network: Network.MAINNET,
+      network: Network.DEVNET,
     })
 
     const aptos = new Aptos(aptosConfig)
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
       privateKey: new Ed25519PrivateKey(PrivateKey.formatPrivateKey(privateKeyStr, PrivateKeyVariants.Ed25519)),
     })
 
-    const signer = new LocalSigner(account, Network.MAINNET)
+    const signer = new LocalSigner(account, Network.DEVNET)
     const aptosAgent = new AgentRuntime(signer, aptos, {
       PANORA_API_KEY: process.env.PANORA_API_KEY,
     })
