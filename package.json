@@ -16,6 +16,7 @@
 		"@langchain/langgraph": "^0.2.41",
 		"ai": "^3.4.33",
 		"isomorphic-dompurify": "^2.20.0",
+		"lucide-react": "^0.483.0",
 		"marked": "^15.0.6",
 		"move-agent-kit": "^0.1.2",
 		"next": "15.1.4",
